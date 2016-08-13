@@ -5,8 +5,11 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-" let g:molokai_original = 1
-" let g:rehash256 = 1
+let base16colorspace=256
+let g:solarized_termcolors=256
+let g:molokai_original = 1
+let g:rehash256 = 1
+
 colorscheme molokai
 
 set nocompatible
@@ -14,6 +17,8 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+Plugin 'chriskempson/base16-vim'
 
 " :PluginList :PluginInstall :PluginSearch :PluginClean
 Plugin 'VundleVim/Vundle.vim'
